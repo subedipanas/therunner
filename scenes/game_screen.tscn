@@ -8,3 +8,7 @@
 [node name="GameLevel" parent="." instance=ExtResource("1_4isyf")]
 
 [node name="GameUI" parent="." instance=ExtResource("2_qhwcd")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(288, 178)
+zoom = Vector2(2, 2)
