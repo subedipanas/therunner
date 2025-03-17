@@ -12,8 +12,8 @@ grow_vertical = 2
 
 [node name="GameMessageLabel" type="Label" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 350.0
+offset_right = 576.0
+offset_bottom = 233.0
 text = "The Runner"
 label_settings = ExtResource("1_pjuqq")
 horizontal_alignment = 1
