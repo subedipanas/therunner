@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://diddbdsixahgs"]
+
+[ext_resource type="Texture2D" uid="uid://bl57orunb7rxf" path="res://assets/game_tilemap_packed.png" id="1_h1pdy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pm4b"]
+atlas = ExtResource("1_h1pdy")
+region = Rect2(48, 304, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj8is"]
+atlas = ExtResource("1_h1pdy")
+region = Rect2(64, 304, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ktx51"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pm4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj8is")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xynqj"]
+radius = 5.09902
+
+[node name="FlyingEnemy" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_ktx51")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.682651
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_xynqj")
