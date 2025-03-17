@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj5ok5lddrxam"]
+
+[ext_resource type="LabelSettings" uid="uid://d3e6py0epjt3u" path="res://ui/text_settings.tres" id="1_pjuqq"]
+
+[node name="GameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameMessageLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 350.0
+text = "The Runner"
+label_settings = ExtResource("1_pjuqq")
+horizontal_alignment = 1
+vertical_alignment = 1
