@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://d1343cpjju6yj"]
+[gd_scene load_steps=5 format=4 uid="uid://d1343cpjju6yj"]
 
 [ext_resource type="TileSet" uid="uid://boiojmy8uq02k" path="res://tilesets/game_tileset.tres" id="1_ff7m1"]
 [ext_resource type="PackedScene" uid="uid://cdg0ltnyx3c27" path="res://objects/ground_enemy.tscn" id="2_id3s6"]
 [ext_resource type="PackedScene" uid="uid://diddbdsixahgs" path="res://objects/flying_enemy.tscn" id="3_3ddop"]
+[ext_resource type="PackedScene" uid="uid://baha54hytun71" path="res://objects/Player.tscn" id="4_s4n50"]
 
 [node name="GameLevel" type="Node2D"]
 
@@ -15,3 +16,6 @@ position = Vector2(396, 202)
 
 [node name="FlyingEnemy" parent="." instance=ExtResource("3_3ddop")]
 position = Vector2(270, 204)
+
+[node name="Player" parent="." instance=ExtResource("4_s4n50")]
+position = Vector2(202, 222)
